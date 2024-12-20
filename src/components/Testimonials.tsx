@@ -22,15 +22,15 @@ export const Testimonials = () => {
   return (
     <section className="py-20 bg-primary">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold text-center text-white mb-12 animate-fade-down">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg animate-fade-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-zoom-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <Quote className="w-8 h-8 text-secondary mb-4" />
+              <Quote className="w-8 h-8 text-secondary mb-4 animate-float" />
               <p className="text-gray-700 mb-4">{testimonial.text}</p>
               <div>
                 <p className="font-semibold">{testimonial.author}</p>
