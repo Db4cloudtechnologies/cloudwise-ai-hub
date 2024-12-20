@@ -100,6 +100,14 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "spin-slow": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
@@ -107,6 +115,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out",
         "zoom-in": "zoom-in 0.5s ease-out",
         float: "float 3s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
       },
     },
   },
